@@ -6,6 +6,9 @@ password: diatmt@26b2
 modules:
   - id: veggie-patch
     name: Challenges
+    visibility:
+      start: "2026-11-18T14:00:00+05:30"
+      stop: "2026-11-18T16:00:00+05:30"
     challenges:
       - id: carrot
         name: Challenge 1 - Carrot
