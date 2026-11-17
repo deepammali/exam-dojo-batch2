@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# User-switching Access Control challenges need `su`. We deliberately do NOT
+# set the SETUID bit on useradd/groupadd/usermod, so students can't create a
+# uid-0 account and trivially read every flag.
+chmod u+s /usr/bin/su 2>/dev/null
+
+# dojjail network challenges: make the run SETUID-capable and provide the
+# iptables lock file.
+chmod 6755 /challenge/run 2>/dev/null
+touch /run/xtables.lock 2>/dev/null
+
+rm -f /challenge/.init
+exit 0

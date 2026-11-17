@@ -1,0 +1,34 @@
+id: lab-2026-b2
+name: Lab Internal Exam - Batch 2
+type: hidden
+image: pwncollege/challenge-legacy:latest
+password: diatmt@26b2
+modules:
+  - id: veggie-patch
+    name: Challenges
+    challenges:
+      - id: carrot
+        name: Challenge 1 - Carrot
+      - id: onion
+        name: Challenge 2 - Onion
+        privileged: true
+      - id: potato
+        name: Challenge 3 - Potato
+      - id: pepper
+        name: Challenge 4 - Pepper
+        privileged: true
+      - id: garlic
+        name: Challenge 5 - Garlic
+      - id: spinach
+        name: Challenge 6 - Spinach
+        privileged: true
+      - id: radish
+        name: Challenge 7 - Radish
+      - id: celery
+        name: Challenge 8 - Celery
+        privileged: true
+      - id: ginger
+        name: Challenge 9 - Ginger
+      - id: pumpkin
+        name: Challenge 10 - Pumpkin
+        privileged: true
