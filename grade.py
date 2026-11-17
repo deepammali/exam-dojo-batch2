@@ -12,11 +12,11 @@ MARKS = {
     "potato": 1,      # Q3  Access Control level5 (SETUID cp)
     "pepper": 1,      # Q4  Firewall 3
     "garlic": 1,      # Q5  Access Control level10
-    "spinach": 3,     # Q6  Scan 1
-    "radish": 3,      # Q7  Access Control level17
-    "celery": 3,      # Q8  Monitor 1
-    "ginger": 3,      # Q9  Access Control level11
-    "pumpkin": 3,     # Q10 TCP Handshake
+    "spinach": 2,     # Q6  Scan 1
+    "radish": 2,      # Q7  Access Control level17
+    "celery": 2,      # Q8  Monitor 1
+    "ginger": 2,      # Q9  Access Control level11
+    "pumpkin": 2,     # Q10 TCP Handshake
 }
 
 MODULE_ID = "veggie-patch"
