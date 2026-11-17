@@ -22,7 +22,23 @@ working Sniffing Cookies challenge).
 4. Deploy, update the dojo, restart the instance, then smoke-test:
      /challenge/run ; curl 10.0.0.2/robots.txt ; curl 10.0.0.2/backup/
 
-## dns/ — (not built yet)
-DNS/DHCP has no ready pwn.college challenge to import, so it must be custom.
-A DNS "flag in a TXT record, retrieved with dig" challenge is tractable;
-a full DHCP-config challenge is awkward to self-contain. Build on request.
+## dns/ — DNS TXT-record lookup  (fulfils Assignment 5, name-resolution half)
+A DNS server on 10.0.0.2 stores the flag in the TXT record for `flag.lab.test`.
+Intended solve:
+  - dig TXT flag.lab.test @10.0.0.2 +short
+  - or: nslookup -type=TXT flag.lab.test 10.0.0.2
+Self-contained; a hand-rolled minimal DNS responder (no external packages).
+The DNS wire format was verified locally against real dig/nslookup.
+
+### Wire it in the same way as osint/ (own run, privileged: true, add marks).
+
+TEST CAVEAT: the student needs a DNS client (dig / nslookup / host). These were
+NOT in the base challenge Dockerfile; the dojo workspace may still provide them.
+Confirm `which dig nslookup host` inside the challenge when you test. If none are
+present, install dnsutils in the dojo image, or the challenge can be solved with
+a short python query.
+
+## dhcp/ — (not built)
+DHCP is broadcast lease negotiation (DORA) and doesn't map cleanly to a
+"find the flag" container; left out. The DNS challenge above covers the
+name-resolution half of Assignment 5.
