@@ -17,6 +17,8 @@ MARKS = {
     "celery": 2,      # Q8  Monitor 1
     "ginger": 2,      # Q9  Access Control level11
     "pumpkin": 2,     # Q10 TCP Handshake
+    "osint": 2,       # Q11 OSINT (optional extra)
+    "dns": 2,         # Q12 DNS  (optional extra)
 }
 
 MODULE_ID = "veggie-patch"
