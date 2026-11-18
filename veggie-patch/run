@@ -190,7 +190,7 @@ def level5():
     Objective: read /flag.
     A copy of a file-copying program has been installed with the SETUID bit set
     so that it runs as root. /flag is readable only by root. Use the installed
-    program to make a readable copy of /flag. Its exact path is printed below.
+    program to make a readable copy of /flag. 
     """
     # On this image the SETUID bit persists under /usr but not under /bin, and
     # the plain cp in PATH is a different, non-SETUID copy.
@@ -199,7 +199,7 @@ def level5():
         shutil.copy("/bin/cp", cp)
     os.chown(cp, 0, 0)
     os.chmod(cp, 0o4755)
-    print(f"A SETUID-root copy program has been installed at: {cp}")
+    # print(f"A SETUID-root copy program has been installed at: {cp}")
 
 def level10():
     """
@@ -239,10 +239,10 @@ def level11():
 def level17():
     """
     Objective: answer 20 questions about the category-based Bell-LaPadula model
-    of Mandatory Access Control correctly within 1 second. Each question asks
+    of Mandatory Access Control correctly within 360 seconds. Each question asks
     whether a subject may read or write an object; answer yes or no.
     """
-    mac_challenge(20, 1, use_flag_seed=False)
+    mac_challenge(20, 360, use_flag_seed=False)
 
 def challenge():
     challenge_level = globals()[f"level{level}"]
