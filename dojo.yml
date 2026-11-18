@@ -32,14 +32,14 @@ modules:
         privileged: true
       - id: ginger
         name: Challenge 9 - Ginger
-      - id: pumpkin
-        name: Challenge 10 - Pumpkin
-        privileged: true
+      # - id: pumpkin
+      #   name: Challenge 10 - Pumpkin
+      #   privileged: true
       # ===== OPTIONAL extra challenges (added for topic variety: OSINT + DNS).
       # ===== To REMOVE them from the exam, delete the 8 lines below.
       - id: osint
-        name: Challenge 11 - OSINT
+        name: Challenge 10 - Okra
         privileged: true
-      - id: dns
-        name: Challenge 12 - DNS
-        privileged: true
+      # - id: dns
+      #   name: Challenge 12 - DNS
+      #   privileged: true
