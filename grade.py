@@ -27,10 +27,8 @@ MODULE_ID = "veggie-patch"
 # EXAM_END earn marks; solves outside the window score 0. ISO 8601 with the
 # +05:30 offset = IST. Both None = no time limit.
 # Set these for the Batch 2 slot, e.g. "2026-11-18T14:00:00+05:30".
-EXAM_START = None
-EXAM_END   = None
-# EXAM_START = "2026-11-18T14:00:00+05:30"
-# EXAM_END   = "2026-11-18T16:00:00+05:30"
+EXAM_START = "2026-11-18T14:00:00+05:30"
+EXAM_END   = "2026-11-18T16:00:00+05:30"
 
 #
 # Grading logic: you shouldn't need to change anything below.
